@@ -7,7 +7,6 @@
  </p>
   
  <p align="center">
-  <img alt="Preview" src="./img/preview.png" width=800">
   <img alt="Preview" src="./img/preview1.png" width=800">
 </p>
 
