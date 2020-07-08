@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a align="center" href="https://robertds07.github.io/CounterSmoke/">Site</a>
+  <a align="center" href="https://robertds07.github.io/CounterStrategy/">Site</a>
 </p>
 
 # Porque fiz?
