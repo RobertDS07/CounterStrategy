@@ -1,2 +1,1 @@
-# CounterStrategy
- Site feito para a comunidade de CS:GO
+<h1 align="center">Passando o site para React</h1>
