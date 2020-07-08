@@ -10,7 +10,7 @@ function circle(e){
     circle = Array.from(circle)
 
     function backgroundCircle(posicao){
-        circle.map(p => p.classList.remove('selected'))
+        circle.forEach(p => p.classList.remove('selected'))
         circle[posicao].classList.add('selected')
     }
 

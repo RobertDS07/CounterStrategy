@@ -15,6 +15,7 @@ const Smoke = styled.div`
 `
 let options, video
 let option1, option2, option1src, option2src
+let smokeClickada
 
 function createOptions() {
     option1 = document.createElement('div')
@@ -38,12 +39,7 @@ function optionsFunction(e) {
     options[positionVideo].removeChild(option2)
 }
 
-
-
 function smoke(e){
-    let smokeSelected = document.querySelectorAll('.smoke')
-    smokeSelected = Array.from(smokeSelected)
-
     options = document.querySelectorAll('.options')
     video = document.querySelectorAll('.video')
     video[positionVideo].classList.add('showVideo')
@@ -53,14 +49,13 @@ function smoke(e){
         options[positionVideo].removeChild(option1)
         options[positionVideo].removeChild(option2)
     }
-
-
-    // PAREI AQUI
-    for(let a in smokeSelected){
-        smokeSelected[a].addEventListener('click', function() {
-            console.log(smokeSelected[a]);
-        })        
+    
+    if(smokeClickada != undefined){
+        smokeClickada.classList.remove('selected')
     }
+
+    smokeClickada = document.getElementById(e.target.id)
+    smokeClickada.classList.add('selected')    
 
     switch (e.target.id){
         case 'DUSTcarroB':

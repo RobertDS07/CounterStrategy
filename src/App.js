@@ -2,6 +2,22 @@ import React from 'react';
 import { createGlobalStyle } from 'styled-components'
 import styled from 'styled-components'
 
+import backgroundDust from './components/img/dust2Back.png'
+import backgroundCache from './components/img/cacheBack.png'
+import backgroundInferno from './components/img/infernoBack.png'
+import backgroundOverpass from './components/img/overpassBack.png'
+import backgroundMirage from './components/img/mirageBack.png'
+import mapaDust from './components/img/mapaD2.png'
+import mapaMirage from './components/img/mapMirage.png'
+import mapaInferno from './components/img/infernoMap.png'
+import mapaOverpass from './components/img/overpassMap.png'
+import mapaCache from './components/img/mapCache.png'
+import navDust from './components/img/dust2Nav.png'
+import navMirage from './components/img/mirageNav.png'
+import navInferno from './components/img/infernoNav.jpg'
+import navOverpass from './components/img/overpassNav.png'
+import navCache from './components/img/cacheNav.png'
+
 import Background from './components/Background.jsx'
 import Nav from './components/Nav.jsx'
 import A from './components/A.jsx'
@@ -34,9 +50,9 @@ export default props =>
     <GlobalStyle />
 
 
-    <Background id='dust' foto='/static/media/dust2Back.7f43cf3a.png'>
+    <Background id='dust' foto={backgroundDust}>
       <ShowMe id='dust' />
-      <ContainerMap mapa='/static/media/mapaD2.09735c3e.png'>
+      <ContainerMap mapa={mapaDust}>
         <Smoke id='DUSTcarroB' top='238px' left='97px' />
         <Smoke id='DUSTaltarB' top='58px' left='77px' />
         <Smoke id='DUSTmeioDoBombB' top='128px' left='107px' />
@@ -56,9 +72,9 @@ export default props =>
       </Video>
     </Background>
 
-    <Background id='mirage' foto='/static/media/mirageBack.2a0f18c7.png'>
+    <Background id='mirage' foto={backgroundMirage}>
       <ShowMe id='mirage' />
-      <ContainerMap mapa='/static/media/mapMirage.763828ec.png' >
+      <ContainerMap mapa={mapaMirage} >
         <Smoke id='DUSTcarroB' top='238px' left='97px' />
       </ContainerMap>
       <Video>
@@ -67,9 +83,9 @@ export default props =>
       </Video>
     </Background>
 
-    <Background id='cache' foto='/static/media/cacheBack.ce44ae21.png'>
+    <Background id='cache' foto={backgroundCache}>
       <ShowMe id='cache' />
-      <ContainerMap mapa='/static/media/mapCache.f859bed3.png' >
+      <ContainerMap mapa={mapaCache} >
 
       </ContainerMap>
       <Video>
@@ -78,9 +94,9 @@ export default props =>
       </Video>
     </Background>
 
-    <Background id='inferno' foto='/static/media/infernoBack.d0c51b20.png'>
+    <Background id='inferno' foto={backgroundInferno}>
       <ShowMe id='inferno' />
-      <ContainerMap mapa='/static/media/infernoMap.e444a196.png' >
+      <ContainerMap mapa={mapaInferno} >
 
       </ContainerMap>
       <Video>
@@ -89,9 +105,9 @@ export default props =>
       </Video>
     </Background>
 
-    <Background id='overpass' foto='/static/media/overpassBack.c966db7c.png'>
+    <Background id='overpass' foto={backgroundOverpass}>
       <ShowMe id='overpass' />
-      <ContainerMap mapa='/static/media/overpassMap.a82e4f52.png' >
+      <ContainerMap mapa={mapaOverpass} >
 
       </ContainerMap>
       <Video>
@@ -103,27 +119,27 @@ export default props =>
 
     <Nav>
       <A mapa='#dust'>
-        <Mapa foto='/static/media/dust2Nav.0affb091.png' id='dust'>
+        <Mapa foto={navDust} id='dust'>
           <Circle class='selected' />
         </Mapa>
       </A>
       <A mapa='#mirage'>
-        <Mapa foto='/static/media/mirageNav.330f8538.png' id='mirage'>
+        <Mapa foto={navMirage} id='mirage'>
           <Circle />
         </Mapa>
       </A>
       <A mapa='#cache'>
-        <Mapa foto='/static/media/cacheNav.696facb3.png' id='cache'>
+        <Mapa foto={navCache} id='cache'>
           <Circle />
         </Mapa>
       </A>
       <A mapa='#inferno'>
-        <Mapa foto='/static/media/infernoNav.c7814e03.jpg' id='inferno'>
+        <Mapa foto={navInferno} id='inferno'>
           <Circle />
         </Mapa>
       </A>
       <A mapa='#overpass'>
-        <Mapa foto='/static/media/overpassNav.dadb86c8.png' id='overpass'>
+        <Mapa foto={navOverpass} id='overpass'>
           <Circle />
         </Mapa>
       </A>
