@@ -1,6 +1,7 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components'
 import styled from 'styled-components'
+import './components/font-awesome-4.7.0/css/font-awesome.css'
 
 import backgroundDust from './components/img/dust2Back.png'
 import backgroundCache from './components/img/cacheBack.png'
@@ -19,7 +20,9 @@ import navOverpass from './components/img/overpassNav.png'
 import navCache from './components/img/cacheNav.png'
 
 import Background from './components/Background.jsx'
+import BackgroundLoader from './components/BackgroundLoader.jsx'
 import Nav from './components/Nav.jsx'
+import NavLoader from './components/NavLoader.jsx'
 import A from './components/A.jsx'
 import Mapa from './components/Mapa.jsx'
 import Circle from './components/circle.jsx'
@@ -29,6 +32,9 @@ import Video from './components/Video.jsx'
 import Iframe from './components/Iframe.jsx'
 import Options from './components/options.jsx'
 import Smoke from './components/Smoke.jsx'
+import Loader from './components/Loader.jsx'
+import Mensagem from './components/Mensagem.jsx'
+import Social from './components/Social.jsx'
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -43,12 +49,24 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const App = styled.div``
+const App = styled.div`
+  background-color: #6400B2;
+`
 
 export default props =>
   <App>
     <GlobalStyle />
 
+    <Loader />
+    <BackgroundLoader>
+      <NavLoader />
+      <i className="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+    </BackgroundLoader>
+
+    <Mensagem />
+    <Social>
+      <a href='https://github.com/RobertDS07/CounterStrategy' target='_blank'><i className="fa fa-github fa-3x"></i></a>
+    </Social>
 
     <Background id='dust' foto={backgroundDust}>
       <ShowMe id='dust' />
