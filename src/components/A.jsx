@@ -6,12 +6,21 @@ const A = styled.a``
 export let positionVideo = 0
 
 function circle(e){
+    let video = document.querySelectorAll('.video')
+    video = Array.from(video)
     let circle = document.querySelectorAll('#circle')
     circle = Array.from(circle)
+    let smoke = document.querySelectorAll('.smoke')
+    smoke = Array.from(smoke)
+    let optionschild = document.querySelectorAll('.option1')
+    optionschild = Array.from(optionschild)
+    optionschild.forEach(e => e.remove())
 
     function backgroundCircle(posicao){
         circle.forEach(p => p.classList.remove('selected'))
         circle[posicao].classList.add('selected')
+        video.forEach(e => e.classList.remove('showVideo'))
+        smoke.forEach(e => e.classList.remove('selected'))
     }
 
     switch (e.target.id) {

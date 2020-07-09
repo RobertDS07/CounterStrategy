@@ -75,7 +75,17 @@ export default props =>
     <Background id='mirage' foto={backgroundMirage}>
       <ShowMe id='mirage' />
       <ContainerMap mapa={mapaMirage} >
-        <Smoke id='DUSTcarroB' top='238px' left='97px' />
+        <Smoke id='MIRAGEcabecinha' top='545px' left='410px' />
+        <Smoke id='MIRAGEctA' top='715px' left='337px' />
+        <Smoke id='MIRAGEpassagemA' top='557px' left='377px' />
+        <Smoke id='MIRAGEjanelao' top='327px' left='297px' />
+        <Smoke id='MIRAGEliga' top='407px' left='372px' />
+        <Smoke id='MIRAGEl' top='127px' left='242px' />
+        <Smoke id='MIRAGEtapete' top='23px' left='222px' />
+        <Smoke id='MIRAGEvan' top='26px' left='57px' />
+        <Smoke id='MIRAGEjanelaB' top='256px' left='120px' />
+        <Smoke id='MIRAGEbombB' top='100px' left='107px' />
+        <Smoke id='MIRAGEforest' top='70px' left='50px' />
       </ContainerMap>
       <Video>
         <Iframe />
@@ -86,7 +96,18 @@ export default props =>
     <Background id='cache' foto={backgroundCache}>
       <ShowMe id='cache' />
       <ContainerMap mapa={mapaCache} >
-
+        <Smoke id='CACHEmeioTr' top='412px' left='390px' />
+        <Smoke id='CACHEportaGaragem' top='109px' left='337px' />
+        <Smoke id='CACHEbaixoB' top='659px' left='197px' />
+        <Smoke id='CACHEportaMeio' top='472px' left='207px' />
+        <Smoke id='CACHEentradaA' top='182px' left='197px' />
+        <Smoke id='CACHEdentroB' top='699px' left='257px' />
+        <Smoke id='CACHEceuB' top='615px' left='207px' />
+        <Smoke id='CACHEestreitoB' top='689px' left='207px' />
+        <Smoke id='CACHEentradaB' top='600px' left='307px' />
+        <Smoke id='CACHEladoDaAzul' top='49px' left='257px' />
+        <Smoke id='CACHEtoxico' top='252px' left='237px' />
+        <Smoke id='CACHEcaixaMeioCache' top='372px' left='267px' />
       </ContainerMap>
       <Video>
         <Iframe />
@@ -97,7 +118,18 @@ export default props =>
     <Background id='inferno' foto={backgroundInferno}>
       <ShowMe id='inferno' />
       <ContainerMap mapa={mapaInferno} >
-
+        <Smoke id='INFERNOcaixao' top='63px' left='386px' />
+        <Smoke id='INFERNOdentroDoBombBMarota' top='162px' left='405px' />
+        <Smoke id='INFERNOCtEntradaB' top='147px' left='476px' />
+        <Smoke id='INFERNOentradaDoBombB' top='127px' left='566px' />
+        <Smoke id='INFERNOdentroDoBombB' top='141px' left='394px' />
+        <Smoke id='INFERNOcarro' top='283px' left='364px' />
+        <Smoke id='INFERNOnip' top='466px' left='555px' />
+        <Smoke id='INFERNOvarandaTapete' top='654px' left='683px' />
+        <Smoke id='INFERNOareia' top='629px' left='713px' />
+        <Smoke id='INFERNObiblioteca' top='482px' left='709px' />
+        <Smoke id='INFERNOarco' top='401px' left='624px' />
+        <Smoke id='INFERNOB' top='272px' left='400px' />
       </ContainerMap>
       <Video>
         <Iframe />
@@ -108,7 +140,18 @@ export default props =>
     <Background id='overpass' foto={backgroundOverpass}>
       <ShowMe id='overpass' />
       <ContainerMap mapa={mapaOverpass} >
-
+        <Smoke id='OVERPASSlixeiraA' top='110px' left='387px' />
+        <Smoke id='OVERPASSbanco' top='90px' left='297px' />
+        <Smoke id='OVERPASSceu' top='175px' left='457px' />
+        <Smoke id='OVERPASSsapao' top='341px' left='683px' />
+        <Smoke id='OVERPASStoxicoB' top='196px' left='607px' />
+        <Smoke id='OVERPASSentradaDoComSaida' top='253px' left='566px' />
+        <Smoke id='OVERPASSdentroBombA' top='141px' left='359px' />
+        <Smoke id='OVERPASSdentroBombB' top='236px' left='577px' />
+        <Smoke id='OVERPASSantesDoSapao' top='457px' left='672px' />
+        <Smoke id='OVERPASSbanheiroMarota' top='419px' left='429px' />
+        <Smoke id='OVERPASSrua' top='323px' left='348px' />
+        <Smoke id='OVERPASSportaBanheiro' top='391px' left='252px' />
       </ContainerMap>
       <Video>
         <Iframe />
