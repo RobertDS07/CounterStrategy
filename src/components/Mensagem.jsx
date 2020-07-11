@@ -9,10 +9,17 @@ const animation = keyframes`
         top: 0;
     }
 `
+const animationResponsive = keyframes`
+    0%{
+        right: 0;
+    }
+    80%{
+        right: 0;
+    }
+`
 
 const Mensagem = styled.div`
     display: none;
-    
     &.visible{
     display: block;
     min-width: 100px;
@@ -31,6 +38,15 @@ const Mensagem = styled.div`
     box-shadow: 0px 8px 8px black;
     animation: ${animation} 8s 1;  
     }
+    @media (max-width: 1886px){
+        &.visible{
+        top: 130px;
+        right: -330px;
+        animation: ${animationResponsive} 8s 1;
+        border-right: none;
+        border-top: 1px solid #6400B2;
+    }
+}
 `
 
 export default props =>

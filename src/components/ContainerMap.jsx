@@ -12,8 +12,14 @@ const ContainerMap = styled.div`
     &.show {
     margin-left: 300px;
     margin-top: 80px;
-    min-width: 800px;
-    min-height: 800px;
+    width: 800px;
+    height: 800px;
+    @media (max-width: 1886px){
+        margin-left: 20px;
+        background-size: 550px 550px;
+        background-repeat: no-repeat;
+        margin-top: 10%;
+    }
 }
 `
 

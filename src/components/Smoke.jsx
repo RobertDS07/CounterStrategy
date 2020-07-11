@@ -13,6 +13,13 @@ const Smoke = styled.div`
     &.selected{
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAMAAAApB0NrAAAA5FBMVEUAAABQM8FyHbVkALJkALJiA7NjALFxG7VvFrRkALKWYb9kArFkALJkAbJiBLN6LbeBOLmMTbyBOblkALJvFrRkALJlArJmBLJlArJkALJjALFkALKBOrl4J7ZnCbGHRbqLTbyXY8B8MLhoDq9lArGFQLqGQrtmBbJnB7JrDrNpC7JnCLFrD7NoCrJkALJjAbJkALFkALJkALJkALLW1tbY2NjBr8/T0NXArM67pszOydO9qM2EQLrMxNKxksisicfV1NbQy9TQzNPHutDEtdC5o8q0mcmujsemf8WmfsWcbcKOUb1xzPQgAAAANHRSTlMAA4B/MhIIgIAc/uSFXCP++O/v08DAoopgU0Eg/v77+vjx7evq5+PBt7CuraCVemtKOCwmUTTBvwAAAQlJREFUOMvtksdywjAUReNIJq60EEp67z1PyMYG0hPg//8HgyVLsmkzbFhwtNHMO3PnzpM2pqBJ95nO8mgr4uS0OQpGd5VbB89wTHT6HzSDbhmZWsTEBrXCFxnRLtbyT84jzmWdxnGLxFDrqON3C1dmpmzlmzBgzHvvOp2UvwTVAVrcTbV5PhEKGR/oI6W4/nDhc4UAwytXdclBg48kJcmBdoiE4u4zg0059CCppG/7Slth/u7sMefNpkpbQev8hTmvZ7HBxrJ32OC7sT/jUTbHxqIPgJLD+Yn6sG9QD/kolRO6Yo2ORSELtarynu9LHc/zmjLBX+nGVN4L1w3D2IrY5Bhu9IXWLMAQhyRMsWlbSVYAAAAASUVORK5CYII=);
     }
+
+    @media (max-width: 1886px){
+        background-size: 25px 25px;
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 25px;
+    }
 `
 let options, video
 let option1, option2, option1src, option2src

@@ -14,6 +14,9 @@ const Circle = styled.div`
     &.selected{
         background: #6400B2;
 }
+@media (max-width: 1886px){
+        margin: 95px 90px;
+    }
 `
 export default props =>
-    <Circle className={props.class} id='circle'/>
+    <Circle className={props.class} id='circle' />

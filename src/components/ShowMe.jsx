@@ -23,6 +23,10 @@ const ShowMe = styled.div`
     box-shadow: 0px 0px 30px rgb(0, 0, 0);
     box-shadow: 0px 0px 40px rgb(0, 0, 0);
 }
+@media (max-width: 1886px){
+    margin-left: 324px;
+    margin-top: 400px;
+}
 `
 
 function ShowMap(e){
@@ -30,6 +34,8 @@ function ShowMap(e){
     showMebtn = Array.from(showMebtn)
     let mapa = document.querySelectorAll('.containerMap')
     mapa = Array.from(mapa)
+
+    smokePosition()
     
     function showMap(posicao){
         mapa.map(p => p.classList.remove('show'))
@@ -37,7 +43,6 @@ function ShowMap(e){
         mapa[posicao].classList.add('show')
         showMebtn[posicao].classList.add('removeShowMe')
     }
-
     switch (e.target.id) {
         case 'dust':
             showMap(0)
@@ -57,5 +62,58 @@ function ShowMap(e){
     }
 }
 
+let containerSize
+
+function pegandoContainerSize(){
+    let showMebtn = document.querySelectorAll('.showMap')
+    showMebtn = Array.from(showMebtn)
+    let mapa = document.querySelectorAll('.containerMap')
+    mapa = Array.from(mapa)
+
+    showMebtn.forEach(e => e.classList.remove('removeShowMe'))
+    mapa.forEach(e => e.classList.remove('show'))
+    if(window.innerWidth > 1886 ){
+        containerSize = 800
+    } else{
+        containerSize = 550
+    }
+}
+
+function smokePosition() {
+    let smoke = document.querySelectorAll('.smoke')
+    smoke = Array.from(smoke)
+    if (containerSize == 550) {
+        if(smoke[0].style.top != '163.625px')
+        smoke.forEach(e => {
+            let top = e.style.top
+            let left = e.style.left
+
+            let newTop = (550 * top.split('px')[0]) / 800 + 'px'
+            let newLeft = (550 * left.split('px')[0]) / 800 + 'px'
+
+            e.style.top = `${newTop}`
+            e.style.left = `${newLeft}`
+        })
+    }
+     else {
+        if (smoke[0].style.top != '238px') {
+            smoke.forEach(e => {
+                let top = e.style.top
+                let left = e.style.left
+
+                let newTop = (800 * top.split('px')[0]) / 550 + 'px'
+                let newLeft = (800 * left.split('px')[0]) / 550 + 'px'
+
+                e.style.top = `${newTop}`
+                e.style.left = `${newLeft}`
+            })
+        }
+    }
+}
+
+
+window.addEventListener('load', pegandoContainerSize())
+window.addEventListener('resize', e => pegandoContainerSize())
+
 export default props =>
-    <ShowMe className='showMap' id={props.id} onClick={e => ShowMap(e)}>Show Me</ShowMe>
+    <ShowMe className='showMap' id={props.id} onClick={e => ShowMap(e)}>Show Map</ShowMe>

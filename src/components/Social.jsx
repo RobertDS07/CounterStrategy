@@ -11,6 +11,10 @@ const Social = styled.div`
     & i{
         border-radius: 50%;
     }
+    @media (max-width: 1886px){
+        top: 30px;
+        left: 30px;
+    }
 `
 
 export default props =>

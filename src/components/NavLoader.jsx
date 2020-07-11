@@ -17,6 +17,20 @@ const NavLoader = styled.div`
     &.none{
         display: none;
     }
+    @media (max-width: 1886px){
+      margin-top: 5px;
+      top: 0 !important;
+      left:  auto;
+      min-width: 1071px;
+      min-height: 125px;
+      border-left: 3px solid #6400B2;
+      border-radius: 8px 8px 8px 8px;
+      border-top: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
 `
 
 function posicionarNav(e){
