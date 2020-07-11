@@ -8,6 +8,10 @@ const Iframe = styled.iframe`
     border-right-width: 0px;
     border-bottom-width: 0px;
     border-left-width: 0px;
+    @media (max-width: 1370px){
+        width: 560px;
+        height: 400px;
+    }
 `
 
 export default props =>

@@ -18,7 +18,7 @@ const ContainerMap = styled.div`
         margin-left: 20px;
         background-size: 550px 550px;
         background-repeat: no-repeat;
-        margin-top: 10%;
+        margin-top: 14%;
     }
 }
 `

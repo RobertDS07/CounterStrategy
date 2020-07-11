@@ -34,7 +34,6 @@ function posicionarNav(e) {
     if (window.innerWidth <= 1886) {
         const posicaoDaNavResponsive = window.innerWidth / 2 - nav.clientWidth / 2
         nav.style.left = posicaoDaNavResponsive + 'px'
-        console.log(nav.clientWidth);
     } else {
         const posicaoDaNav = window.innerHeight - (window.innerHeight / 2 + nav.clientHeight / 2)
         nav.style.top = posicaoDaNav + 'px'
