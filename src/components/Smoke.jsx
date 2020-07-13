@@ -54,13 +54,13 @@ function smoke(e) {
     video = document.querySelectorAll('.video')
     video[positionVideo].classList.add('showVideo')
 
-    if (options[positionVideo].children.length != 0) {
+    if (options[positionVideo].children.length !== 0) {
         options[positionVideo].classList.remove('showOptions')
         options[positionVideo].removeChild(option1)
         options[positionVideo].removeChild(option2)
     }
 
-    if (smokeClickada != undefined) {
+    if (smokeClickada !== undefined) {
         smokeClickada.classList.remove('selected')
     }
 
@@ -90,7 +90,7 @@ function smoke(e) {
             video[positionVideo].children[0].src = 'https://www.youtube.com/embed/JeFlhrBNCU4'
             break
         case 'DUSTcaixaGordaMeio':
-            if (options[positionVideo].children.length == 0) {
+            if (options[positionVideo].children.length === 0) {
                 video[positionVideo].children[0].src = ''
                 createOptions()
                 option1src = 'https://www.youtube.com/embed/q5N1gJ3IEYE'
@@ -104,7 +104,7 @@ function smoke(e) {
             video[positionVideo].children[0].src = 'https://www.youtube.com/embed/ZVxPyR0N1g4'
             break
         case 'DUSTbaseCtA':
-            if (options[positionVideo].children.length == 0) {
+            if (options[positionVideo].children.length === 0) {
                 video[positionVideo].children[0].src = ''
                 createOptions()
                 option1src = 'https://www.youtube.com/embed/MvR46nr55zc'
@@ -193,7 +193,7 @@ function smoke(e) {
             break
 
         case 'OVERPASSlixeiraA':
-            if (options[positionVideo].children.length == 0) {
+            if (options[positionVideo].children.length === 0) {
                 video[positionVideo].children[0].src = ''
                 createOptions()
                 option1src = 'https://www.youtube.com/embed/zykCYK83kH4'
@@ -207,7 +207,7 @@ function smoke(e) {
             video[positionVideo].children[0].src = 'https://www.youtube.com/embed/60LGXONecnU'
             break
         case 'OVERPASSceu':
-            if (options[positionVideo].children.length == 0) {
+            if (options[positionVideo].children.length === 0) {
                 video[positionVideo].children[0].src = ''
                 createOptions()
                 option1src = 'https://www.youtube.com/embed/YiGopEMa7Io'
@@ -242,7 +242,7 @@ function smoke(e) {
             video[positionVideo].children[0].src = 'https://www.youtube.com/embed/QxZ3regLXmA'
             break
         case 'OVERPASSrua':
-            if (options[positionVideo].children.length == 0) {
+            if (options[positionVideo].children.length === 0) {
                 video[positionVideo].children[0].src = ''
                 createOptions()
                 option1src = 'https://www.youtube.com/embed/3KCgCV9swZE'

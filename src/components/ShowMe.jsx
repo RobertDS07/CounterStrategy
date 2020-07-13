@@ -82,8 +82,8 @@ function pegandoContainerSize(){
 function smokePosition() {
     let smoke = document.querySelectorAll('.smoke')
     smoke = Array.from(smoke)
-    if (containerSize == 550) {
-        if(smoke[0].style.top != '163.625px')
+    if (containerSize === 550) {
+        if(smoke[0].style.top !== '163.625px')
         smoke.forEach(e => {
             let top = e.style.top
             let left = e.style.left
@@ -96,7 +96,7 @@ function smokePosition() {
         })
     }
      else {
-        if (smoke[0].style.top != '238px') {
+        if (smoke[0].style.top !== '238px') {
             smoke.forEach(e => {
                 let top = e.style.top
                 let left = e.style.left

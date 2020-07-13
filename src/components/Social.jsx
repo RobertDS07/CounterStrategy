@@ -5,8 +5,8 @@ const Social = styled.div`
     max-width: 100px;
     max-height: 100px;
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 30px;
+    right: 30px;
     z-index: 1;
     & i{
         border-radius: 50%;

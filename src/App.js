@@ -1,23 +1,8 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components'
 import styled from 'styled-components'
-import './components/font-awesome-4.7.0/css/font-awesome.css'
-
-import backgroundDust from './components/img/dust2Back.png'
-import backgroundCache from './components/img/cacheBack.png'
-import backgroundInferno from './components/img/infernoBack.png'
-import backgroundOverpass from './components/img/overpassBack.png'
-import backgroundMirage from './components/img/mirageBack.png'
-import mapaDust from './components/img/mapaD2.png'
-import mapaMirage from './components/img/mapMirage.png'
-import mapaInferno from './components/img/infernoMap.png'
-import mapaOverpass from './components/img/overpassMap.png'
-import mapaCache from './components/img/mapCache.png'
-import navDust from './components/img/dust2Nav.png'
-import navMirage from './components/img/mirageNav.png'
-import navInferno from './components/img/infernoNav.jpg'
-import navOverpass from './components/img/overpassNav.png'
-import navCache from './components/img/cacheNav.png'
+import './assets/font-awesome-4.7.0/css/font-awesome.css'
+import img from './assets/images.js'
 
 import Background from './components/Background.jsx'
 import BackgroundLoader from './components/BackgroundLoader.jsx'
@@ -68,9 +53,9 @@ export default props =>
       <a href='https://github.com/RobertDS07/CounterStrategy' target='_blank'><i className="fa fa-github fa-3x"></i></a>
     </Social>
 
-    <Background id='dust' foto={backgroundDust}>
+    <Background id='dust' foto={img.backgroundDust}>
       <ShowMe id='dust' />
-      <ContainerMap mapa={mapaDust}>
+      <ContainerMap mapa={img.mapaDust}>
         <Smoke id='DUSTcarroB' top='238px' left='97px' />
         <Smoke id='DUSTaltarB' top='58px' left='77px' />
         <Smoke id='DUSTmeioDoBombB' top='128px' left='107px' />
@@ -90,9 +75,9 @@ export default props =>
       </Video>
     </Background>
 
-    <Background id='mirage' foto={backgroundMirage}>
+    <Background id='mirage' foto={img.backgroundMirage}>
       <ShowMe id='mirage' />
-      <ContainerMap mapa={mapaMirage} >
+      <ContainerMap mapa={img.mapaMirage} >
         <Smoke id='MIRAGEcabecinha' top='545px' left='410px' />
         <Smoke id='MIRAGEctA' top='715px' left='337px' />
         <Smoke id='MIRAGEpassagemA' top='557px' left='377px' />
@@ -111,9 +96,9 @@ export default props =>
       </Video>
     </Background>
 
-    <Background id='cache' foto={backgroundCache}>
+    <Background id='cache' foto={img.backgroundCache}>
       <ShowMe id='cache' />
-      <ContainerMap mapa={mapaCache} >
+      <ContainerMap mapa={img.mapaCache} >
         <Smoke id='CACHEmeioTr' top='412px' left='390px' />
         <Smoke id='CACHEportaGaragem' top='109px' left='337px' />
         <Smoke id='CACHEbaixoB' top='659px' left='197px' />
@@ -133,9 +118,9 @@ export default props =>
       </Video>
     </Background>
 
-    <Background id='inferno' foto={backgroundInferno}>
+    <Background id='inferno' foto={img.backgroundInferno}>
       <ShowMe id='inferno' />
-      <ContainerMap mapa={mapaInferno} >
+      <ContainerMap mapa={img.mapaInferno} >
         <Smoke id='INFERNOcaixao' top='63px' left='386px' />
         <Smoke id='INFERNOdentroDoBombBMarota' top='162px' left='405px' />
         <Smoke id='INFERNOCtEntradaB' top='147px' left='476px' />
@@ -155,9 +140,9 @@ export default props =>
       </Video>
     </Background>
 
-    <Background id='overpass' foto={backgroundOverpass}>
+    <Background id='overpass' foto={img.backgroundOverpass}>
       <ShowMe id='overpass' />
-      <ContainerMap mapa={mapaOverpass} >
+      <ContainerMap mapa={img.mapaOverpass} >
         <Smoke id='OVERPASSlixeiraA' top='110px' left='387px' />
         <Smoke id='OVERPASSbanco' top='90px' left='297px' />
         <Smoke id='OVERPASSceu' top='175px' left='457px' />
@@ -180,27 +165,27 @@ export default props =>
 
     <Nav>
       <A mapa='#dust'>
-        <Mapa foto={navDust} id='dust'>
+        <Mapa foto={img.navDust} id='dust'>
           <Circle class='selected' />
         </Mapa>
       </A>
       <A mapa='#mirage'>
-        <Mapa foto={navMirage} id='mirage'>
+        <Mapa foto={img.navMirage} id='mirage'>
           <Circle />
         </Mapa>
       </A>
       <A mapa='#cache'>
-        <Mapa foto={navCache} id='cache'>
+        <Mapa foto={img.navCache} id='cache'>
           <Circle />
         </Mapa>
       </A>
       <A mapa='#inferno'>
-        <Mapa foto={navInferno} id='inferno'>
+        <Mapa foto={img.navInferno} id='inferno'>
           <Circle />
         </Mapa>
       </A>
       <A mapa='#overpass'>
-        <Mapa foto={navOverpass} id='overpass'>
+        <Mapa foto={img.navOverpass} id='overpass'>
           <Circle />
         </Mapa>
       </A>
