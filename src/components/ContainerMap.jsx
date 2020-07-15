@@ -20,6 +20,9 @@ const ContainerMap = styled.div`
         background-repeat: no-repeat;
         margin-top: 14%;
     }
+    @media (min-height: 1600px){
+        margin: 300px 300px;
+    }
 }
 `
 

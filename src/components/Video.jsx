@@ -13,6 +13,10 @@ const Video = styled.div`
     &.showVideo{
         visibility: visible;
     }
+    @media (min-height: 1600px){
+    right: 230px;
+    top: 1000px;
+}
 `
 
 export default props =>

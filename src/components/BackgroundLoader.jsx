@@ -3,7 +3,7 @@ import styled, { keyframes } from 'styled-components'
 
 const animation = keyframes`
     80%{
-        opacity: 1;
+        opacity: 0;
         visibility: hidden;
         display: flex;
     }
